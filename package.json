@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/FACN7/Continuous-Integration-Res/issues"
   },
-  "homepage": "https://github.com/FACN7/Continuous-Integration-Res#readme"
+  "homepage": "https://github.com/FACN7/Continuous-Integration-Res#readme",
+  "devDependencies": {
+    "tape": "^4.11.0"
+  }
 }
