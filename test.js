@@ -13,3 +13,14 @@ test('Home route', (t) => {
       t.end();
     });
 });
+test('other route', (t) => {
+  supertest(hello)
+    .get("/other")
+    .expect(400)
+    .expect('Content-Type', /html/)
+    .end((err, res) => {
+      t.error(err);
+      t.equal(res.text, '404 page', 'response should contain 404 page');
+      t.end();
+    });
+});
